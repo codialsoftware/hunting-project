@@ -20,7 +20,7 @@ body {
 
 .styleHeader1 {
 	height: 123px;
-	background: #c58854 url(../../huntingGfx/tlo2.jpg) center no-repeat;
+	background: #eda149 url(../../huntingGfx/tlo5.jpg) center no-repeat;
 	width: 100%;
 	position: absolute;
 	top: 0px;
@@ -124,7 +124,7 @@ body {
 .topMenuBackground {
 	width: 100%;
 	height: 70px;
-	background: red;
+	background: #e39840 url(../../huntingGfx/tlo_drewno_1.jpg) center no-repeat;
 }
 
 .contentMiddleBar {
@@ -436,4 +436,25 @@ span.field-label { /* The inline field label used by the Fences module */
 
 span.form-required {
 	color: gray;
+}
+
+#navigation #main-menu {
+	text-align: center;
+}
+
+#navigation ul {
+	display: block;
+	position: relative;
+	top: 20px;
+	width: 80%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#navigation ul li a {
+	color: #70410a;
+	text-decoration: none;
+	font-family: 'LuxiSerifRegular', 'EnriquetaRegular';
+	font-size: 16px;
+	font-weight: bold;
 }
