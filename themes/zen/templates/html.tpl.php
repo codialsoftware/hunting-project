@@ -106,6 +106,11 @@
   
   <link href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/LuxiSerif/stylesheet.css" rel="stylesheet" type="text/css" />
   <link href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Enriquetta/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Kaushan/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Bebas/stylesheet.css" rel="stylesheet" type="text/css" />
+  
+  <link href='http://fonts.googleapis.com/css?family=Limelight|Squada+One|Righteous|Fjalla+One|Oswald|Homenaje' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Economica|Felipa|Keania+One|Berkshire+Swash|Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

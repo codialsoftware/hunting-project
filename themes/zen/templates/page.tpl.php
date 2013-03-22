@@ -123,6 +123,7 @@
 		<div class="topMenuBackground"></div>
 		<div class="contentMiddleBar">
 			<div class="contentMiddleBarLeft">
+				<img src="<?php print path_to_theme() ?>/huntingGfx/logo.png" alt="logo"></img>
 				<?php /*print render($title_prefix); */?>
 			      <?php /*if ($title): */?>
 			        <h2 class="title" id="page-title">
