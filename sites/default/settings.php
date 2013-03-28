@@ -221,7 +221,7 @@ $databases = array (
       'host' => 'localhost',
       'port' => '3306',
       'driver' => 'mysql',
-      'prefix' => 'HUNTING_',
+      'prefix' => '',
     ),
   ),
 );
