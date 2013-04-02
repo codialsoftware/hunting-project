@@ -216,12 +216,12 @@ $databases = array (
     'default' => 
     array (
       'database' => 'hunting',
-      'username' => 'bor',
+      'username' => 'borbor',
       'password' => 'bor7052',
-      'host' => 'localhost',
-      'port' => '3306',
+      'host' => 'db4free.net',
+      'port' => '',
       'driver' => 'mysql',
-      'prefix' => '',
+      'prefix' => 'HUNTING_',
     ),
   ),
 );
@@ -256,7 +256,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '1q8NZJEh21sHMMCMkribyR-mhceLXFJ_Nl56auBRC1M';
+$drupal_hash_salt = '39Fg4CecTjtrCA7fi58znAaDhufOGfa-mkeAYMhY4qw';
 
 /**
  * Base URL (optional).
