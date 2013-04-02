@@ -1,1 +1,1 @@
-mysqldump --tables -u bor -p hunting > schema.sql
+mysqldump --tables -u bor -pbor7052 hunting > schema.sql
