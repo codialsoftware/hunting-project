@@ -1,0 +1,13 @@
+/*
+ * Author: Mateusz Moroz (http://triggersoft.pl)
+ * Copyright by (c) Triggersoft - Mateusz Moroz, 2012
+ */
+
+jQuery(document).ready(function() {
+	jQuery('#block-system-navigation a').filter("[href $= '/foo'],[href $= '/?q=foo']")
+		.css('cursor','default')
+		.attr('href', '')
+		.click(function() {
+			return false; 
+	});
+});
