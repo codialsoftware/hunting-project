@@ -97,6 +97,8 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
+  
+  	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/styles.css" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
