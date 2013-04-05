@@ -101,6 +101,10 @@
   	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/styles.css" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+
+	<div class="styleHeader1"></div>
+	<div class="styleHeader2"></div>
+
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
       <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
