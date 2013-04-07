@@ -113,7 +113,19 @@
   </header>
 
   <div id="main">
-
+	
+	<div id="innerTeaserContainer">
+		<div id="huntingLogoContainer">
+			<img src="<?php print $base_path.path_to_theme(); ?>/huntingGfx/logo.png" alt="Logo" />
+			<span>Koło</span>
+			<span class='name'>BÓR</span>
+			<span>Łowieckie</span>
+		</div>
+		<div id="huntingSlideshowContainer">
+			Slideshow
+		</div>
+	</div>
+	
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
