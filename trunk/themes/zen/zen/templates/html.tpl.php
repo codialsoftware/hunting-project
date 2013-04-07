@@ -99,6 +99,10 @@
   <?php endif; ?>
   
   	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/styles.css" />
+  	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Kaushan/stylesheet.css" />
+  	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Enriquetta/stylesheet.css" />
+  	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/LuxiSerif/stylesheet.css" />
+  	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
