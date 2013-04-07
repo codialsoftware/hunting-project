@@ -7,7 +7,7 @@ body {
 
 .styleHeader1 {
 	height: 123px;
-	background: #eda149 url(../huntingGfx/tlo5.jpg) center no-repeat;
+	background: #eda149;
 	width: 100%;
 	position: absolute;
 	top: 0px;
@@ -103,19 +103,43 @@ h2 {
 
 
 #main #content {
+	position: relative;
 	float: none !important;
 	width: 680px !important;
 	margin-left: 0px !important;
 	margin-top: 70px !important;
 	margin-left: 220px !important;
 	min-height: 700px;
+	padding: 40px 0px;
 }
 
 
-h1 {
-	color: #eeeeee;	
+#main h1 {
+	margin-top: 15px;
+	color: #936a53;
+	font-family: 'LuxiSerifRegular', 'EnriquetaRegular';
+	font-size: 23px;
 }
 
+
+#main .breadcrumb {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../huntingGfx/tlo3.jpg) repeat-x;
+	width: 100%;
+	color: white;
+}
+
+
+#main .breadcrumb a {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	margin-left: 20px;
+}
 
 #main .region-sidebar-first {
 	background-color: #f9f9f9;
@@ -241,7 +265,7 @@ span.form-required {
 
 .sidebars {
 	position: absolute;
-	top: 360px;	
+	top: 366px;	
 }
 
 #navigation {
@@ -299,13 +323,12 @@ span.form-required {
 	width: 100%;
 	height: 295px;
 	top: 70px;
-	z-index: 1000;
 	position: relative;
 }
 
 
 #huntingLogoContainer {
-	width: 200px;
+	width: 220px;
 	height: 100%;
 	top: 0px;
 	left: 0px;
@@ -339,10 +362,40 @@ span.form-required {
 
 
 #huntingSlideshowContainer {
-	border: 2px solid blue;
-	width: 700px;
+	width: 680px;
 	height: 100%;
 	top: 0px;
-	left: 200px;
+	left: 220px;
 	position: absolute;
 }
+
+#huntingSlideshowContainer div {
+	width: 0px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+#main .view-obecni-cz-onkowie {
+	margin-top: 20px;
+}
+
+
+#main .node-member {
+	background: #f4f4f4;
+	padding: 10px;	
+	border-top: 1px dashed #999999;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #777777;
+}
+
+#main .node-member h2 a {
+	text-decoration: none;
+	color: #666666;
+	font-size: 19px;
+}
+
+
