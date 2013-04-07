@@ -109,7 +109,71 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
+	
+	<!-- Show slideshow -->
+	
+	<script type="text/javascript">
+	
+		function runSlideshow(items, itemIndex) {
+			
+			if (typeof itemIndex === 'undefined') {
+				var html = [];
+				for (var i = 0; i < items.length; i++) {
+					html.push("<div ");
+					html.push("id='slideshow_");
+					html.push(i);
+					html.push("' style='");
+					html.push("background-image:");
+					html.push(		" url(");
+					html.push(			items[i]);
+					html.push("		);'>");
+					html.push("</div>");
+				}
+				
+				$("#huntingSlideshowContainer").html(html.join(""));
+				itemIndex = items.length;
+			};
+			
+			var tabLelgth = items.length;
+			
+			itemIndex = itemIndex % tabLelgth;
+			$("#slideshow_" + itemIndex).animate({ width: "0px" }, 400);
+			itemIndex = (itemIndex + 1) % tabLelgth;
+			$("#slideshow_" + itemIndex).animate({ width: "100%" }, 400);
+			
+			setTimeout(
+				(function(items, itemIndex) {
+					return function() {
+						runSlideshow(items, itemIndex);
+					}
+				})(items, itemIndex),
+				5000
+			);
+		}
+	
+		$(function() {
+			runSlideshow(
+			<?php
+				$files = glob(path_to_theme()."/huntingGfx/slideshow/*.jpg");
+				
+				print "[";
+				
+				for ($i = 0; $i < sizeof($files); $i++) {
+					$file = $files[$i];
+					if ($i > 0) {
+						print ", ";
+					}
+					print "'";
+					print $file;
+					print "'";
+				}
+				
+				print "]";
+			?>
+			);
+		})
+	</script>
+	
   </header>
 
   <div id="main">
