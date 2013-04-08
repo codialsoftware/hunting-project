@@ -110,10 +110,61 @@
   		var $ = jQuery;
   		
   		$(function() {
+  			
+  			// CORNERS
+  			
   			$("#main").corner("15px");
   			$("#navigation").corner("top 10px");
   			
   			$("#content .breadcrumb").corner("bottom 8px");
+  			
+  			$("#main .view-id-aktualno_ci .views-row").corner("right 15px");
+  			$("#main .view-id-byli_cz_onkowie .views-row").corner("right 15px");
+  			$("#main .view-id-obecni_cz_onkowie .views-row").corner("right 15px");
+  			
+  			$("#main h1.title").corner("right 15px");
+  			
+  			
+  			// DEAL WITH IMAGE IN ARTICLE
+  			
+  			$("#main .node-aktualno-ci .field-type-text-with-summary .field-item").prepend(
+  				$("#main .field-name-field-art-obrazek img"));
+  				
+  				
+  			// DISABLE LINK FOR MEMBERS (DON'T ALLOW TO OPEN THE PAGE OF A MEMBER)
+  			
+  			$("#main .node-member").each(function() {
+  				var $this = $(this);
+  				var $a = $this.find("a");
+  				$a.parent().html($a.html());
+  				$a.css('cursor', 'auto');
+  			});
+  			
+  			
+  			// ENABLE LINK FOR LINKS (CREATE FROM DESCRIPTION AND PLAIN LINK)
+  			
+  			$("#main .node-linka").each(function() {
+  				var $this = $(this);
+  				
+  				var $a = $this.find(".field-name-field-link-opis .field-item");
+  				var $href = $this.find(".field-name-field-odno-nik .field-item");
+  				
+  				var link = $href.html();
+  				var descr = $a.html();
+  				
+  				$a.html("<a href='" + link + "'>" + descr + "</a>");
+  				$href.css("display", "none");
+  				
+  				$aTitle = $this.find("h2 a");
+  				$aTitle.parent().html($aTitle.html());
+  			});
+  			
+  			
+  			// REPLACE ENGLISH TEXTS
+  			
+  			$("#main #block-user-login .form-item-name label").html("Użytkownik *");
+  			$("#main #block-user-login .form-item-pass label").html("Hasło *");
+  			$("#main #block-user-login #edit-actions input").val("Zaloguj");
   		});
   	</script>
 
