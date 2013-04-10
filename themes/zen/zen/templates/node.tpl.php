@@ -95,8 +95,12 @@
 
       <?php if ($display_submitted): ?>
         <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
+          	<?php 
+          		print $user_picture;
+//          		print theme('username', $node);
+//          		print ' | ' . format_date($node->created, 'custom', 'd/m/Y');
+          		print $submitted; 
+          	?>
         </p>
       <?php endif; ?>
 
