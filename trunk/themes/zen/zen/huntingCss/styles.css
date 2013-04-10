@@ -410,6 +410,15 @@ span.form-required {
 
 #main .node-aktualno-ci .submitted {
 	font-style: italic;
+	font-size: 11px;
+	color: #664c3c;
+	position: relative;
+	top: -20px;
+	margin-left: 15px;
+}
+
+#main .node-aktualno-ci .links {
+	display: none;
 }
 
 #main .views-row-odd, #main .views-row-odd {
