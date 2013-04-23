@@ -104,7 +104,12 @@
   	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/Enriquetta/stylesheet.css" />
   	<link rel="stylesheet" type="text/css" href="<?php print $base_path . $path_to_zen; ?>/huntingCss/fonts/LuxiSerif/stylesheet.css" />
   	
+  	<link rel="stylesheet" href="<?php print $base_path . $path_to_zen; ?>/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+  	
   	<script type="text/javascript" src="<?php print $base_path . $path_to_zen; ?>/huntingJs/jquery.corner.js"></script>
+  	
+  	<script type="text/javascript" src="<?php print $base_path . $path_to_zen; ?>/prettyPhoto/js/jquery.prettyPhoto.js" charset="utf-8"></script>
+  	
   	<script type="text/javascript">
   	
   		var $ = jQuery;
@@ -123,7 +128,7 @@
   			$("#main .view-id-obecni_cz_onkowie .views-row").corner("right 15px");
   			
   			$("#main h1.title").corner("right 15px");
-  			
+  			$("#main .comment").corner("10px");
   			
   			// DEAL WITH IMAGE IN ARTICLE
   			
@@ -165,6 +170,39 @@
   			$("#main #block-user-login .form-item-name label").html("Użytkownik *");
   			$("#main #block-user-login .form-item-pass label").html("Hasło *");
   			$("#main #block-user-login #edit-actions input").val("Zaloguj");
+  			$("#main #search-block-form #edit-submit").val("Szukaj");
+  			$("#main #content h2.comment-form").html("Dodaj komentarz");
+  			$("#main #content #comment-form #edit-author--2 label").html("Dodaj jako");
+  			$("#main #content #comment-form div.form-item-subject label").html("Temat");
+  			$("#main #content .node-gallery-item li.node-readmore a").html("więcej...");
+  			$("#main #content li.comment-delete a").html("usuń");
+  			$("#main #content li.comment-edit a").html("edytuj");
+  			$("#main #content li.comment-reply a").html("odpowiedz");
+  			$("#main #content input#edit-submit[value='Save']").val("Zapisz");
+  			$("#main #content input#edit-preview[value='Preview']").val("Podgląd");
+  			$("#main #content input[value='Search']").val("Szukaj");
+  			$("#main #content input[value='Delete']").val("Usuń");
+  			$("#main #content a[id='edit-cancel']").html("Anuluj");
+  			$("#main #content .comments h2.title").html("Komentarze");
+  			$("#main #content .comments h2.comment-form").html("Dodaj komentarz");
+  			
+  			$("#main form#user-login-form ul li.first a").html("Utwórz nowe konto");
+  			$("#main form#user-login-form ul li.last a").html("Zmień hasło");
+  			
+  			// SIZES
+  			
+  			$(".sidebars").height($("#content").height() - 230);
+  			
+  			// PRETTY_PHOTO
+  			
+  			$(document).ready(function() {
+  				
+  				$("div.views-row div.field-item a").each(function() {
+  					$(this).attr("rel", "prettyPhoto[gallery1]");
+  				});
+  				
+				$("#main a[rel^='prettyPhoto']").prettyPhoto();
+			});
   		});
   	</script>
 
