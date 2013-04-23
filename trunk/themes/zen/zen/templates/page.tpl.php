@@ -180,10 +180,10 @@
 	
 	<div id="innerTeaserContainer">
 		<div id="huntingLogoContainer">
-			<img src="<?php print $base_path.path_to_theme(); ?>/huntingGfx/logo.png" alt="Logo" />
-			<span>Koło</span>
-			<span class='name'>"BÓR"</span>
-			<span>Łowieckie nr 1</span>
+			<img src="<?php print $base_path.path_to_theme(); ?>/huntingGfx/logo2.png" alt="Logo" />
+			<span>Koło łowieckie nr 1</span>
+
+			<span></span>
 		</div>
 		<div id="huntingSlideshowContainer">
 			
