@@ -152,12 +152,12 @@ h2 {
 }
 
 #block-system-navigation .block-title {
-	padding-top: 30px;
+	padding-top: 50px;
 	background: url(../huntingGfx/emblemat.png) top center no-repeat;
 }
 
 .block-menu {
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	background: url(../huntingGfx/emblemat2.png) bottom center no-repeat;
 }
 
@@ -286,7 +286,7 @@ span.form-required {
 	display: block;
 	position: relative;
 	top: 20px;
-	width: 80%;
+	width: 90%;
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
@@ -388,7 +388,7 @@ span.form-required {
 
 
 #main .node-member, #main .node-page, #main .node-aktualno-ci {
-	padding: 10px;	
+	padding: 25px;	
 	/* border-top: 1px dashed #dddddd; */
 	font-size: 12px;
 	color: #462512;
@@ -408,13 +408,14 @@ span.form-required {
 	margin: 0px 10px 10px 0px;
 }
 
-#main .node-aktualno-ci .submitted {
+#main .node-aktualno-ci .submitted-by {
 	font-style: italic;
 	font-size: 11px;
 	color: #664c3c;
-	position: relative;
-	top: -20px;
+/*	position: relative;
+	top: -20px; 
 	margin-left: 15px;
+*/
 }
 
 #main .node-aktualno-ci .links {
@@ -509,4 +510,161 @@ span.form-required {
 
 #main #block-user-login {
 	margin-top: 50px;
+}
+
+.form-text {
+	border: 1px solid lightgray;
+}
+
+#edit-submit {
+	position: absolute;
+	right: 0px;
+/* 	font-size: 15px;
+	font-family: "Times New Roman", Times, serif;
+	color: #ffe69b;
+	background: #6a3e2a;
+	border: none; */
+}
+
+.form-submit {
+	font-size: 15px;
+	font-family: "Times New Roman", Times, serif;
+	color: #ffe69b;
+	background: #6a3e2a;
+	border: none;	
+}
+
+#main ul.menu {
+	margin: 0.3em 0;
+}
+
+
+.comments {
+	margin: 10px;
+}
+
+.comment {
+	font-size: 12px;
+	color: #462512;
+}
+
+.comment .submitted {
+	font-size: 12px;
+}
+
+.comment .submitted a {
+	color: #664c3c;
+}
+
+.comment .comment-title a {
+	color: #664c3c;
+}
+
+
+#main .view-galerie-zdj- .views-row {
+	margin: 16px;
+	float: left;
+	width: 130px;
+	height: 165px;
+	position: relative;
+}
+
+#main #content .node-gallery-item {
+	height: 100%;
+	font-size: 12px;
+}
+
+#main #content .node-gallery-item div.field-item {
+	margin: 10px 10px 0px 19px;
+	color: #664c3c;
+}
+
+#main #content .node-gallery-item .comment-add {
+	display: none;
+}
+
+#main .view-galerie-zdj- .node-teaser {
+}
+
+#main .view-galerie-zdj- .node-teaser h2 {
+	text-align: center;
+	line-height: 1.1em;
+	margin-bottom: 3px;
+}
+
+#main .view-galerie-zdj- .node-teaser h2 a {
+	font-size: 13px;
+}
+
+#main .view-galerie-zdj- .field-item {
+	text-align: center;
+}
+
+#main .view-galerie-zdj- .submitted {
+	display: none;
+}
+
+#main .view-galerie-zdj- ul.links {
+	position: absolute;
+	bottom: 2px;
+	margin: 0px;
+	right: 5px;
+}
+
+#main .view-galerie-zdj- ul.links a {
+	color: #664c3c;
+	font-size: 12px;
+	float: right;	
+}
+
+#main .view-galerie-zdj- li.comment_forbidden {
+	display: none;
+}
+
+#main div.field-name-field-gallery-image {
+	margin: 23px;
+}
+
+#main #content h2.comment-form {
+	background: #e8e8e8;
+	margin-top: 20px;
+}
+
+#main .comment-form {
+	font-size: 12px;
+	margin: 20px;
+	position: relative;
+}
+
+#main .comment-form div#edit-author--2 {
+	display: none;
+}
+
+#main .comment-form a {
+	color: #664c3c;
+}
+
+#main ul.tabs {
+	margin: 15px;
+}
+
+#main form.confirmation {
+	margin: 20px;
+	font-size: 12px;
+	position: relative;
+}
+
+#main a.permalink {
+	display: none;
+}
+
+#main .comment {
+	background: #f6f6f6;
+	padding: 10px;
+	margin: 4px;
+	margin-bottom: 10px;
+}
+
+textarea {
+	border: 1px solid lightgray;	
 }
