@@ -197,7 +197,7 @@
   			
   			$(document).ready(function() {
   				
-  				$("div.views-row div.field-item a").each(function() {
+  				$("div.views-row .node-gallery-item div.field-item a").each(function() {
   					$(this).attr("rel", "prettyPhoto[gallery1]");
   				});
   				
