@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/hunting/sites/all/libraries/ckeditor/';
