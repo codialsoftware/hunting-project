@@ -109,6 +109,7 @@
   	<script type="text/javascript" src="<?php print $base_path . $path_to_zen; ?>/huntingJs/jquery.corner.js"></script>
   	
   	<script type="text/javascript" src="<?php print $base_path . $path_to_zen; ?>/prettyPhoto/js/jquery.prettyPhoto.js" charset="utf-8"></script>
+  	<script type="text/javascript" src="<?php print $base_path . $path_to_zen; ?>/custom/node-gallery-tools.js" charset="utf-8"></script>
   	
   	<script type="text/javascript">
   	
@@ -202,6 +203,11 @@
   				});
   				
 				$("#main a[rel^='prettyPhoto']").prettyPhoto();
+			});
+			
+			// Do some weird stuff for node-gallery to work fine
+			$(function() {
+				node_gallery_cheats();
 			});
   		});
   	</script>

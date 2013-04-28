@@ -1,3 +1,2 @@
-@echo bor7052
-@mysql -u bor -p hunting < schema.sql
+@mysql -u bor -pbor7052 hunting < schema.sql
 pause
