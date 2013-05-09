@@ -3,6 +3,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background: #feefbb;
+	font-size: 12px;
+	color: #462512; 
 }
 
 .styleHeader1 {
@@ -667,4 +669,29 @@ span.form-required {
 
 textarea {
 	border: 1px solid lightgray;	
+}
+
+.photo-gallery-descr {
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+.photo-gallery-row img {
+	margin: 0px 20px 10px 3px;	
+}
+
+.view-content {
+	margin: 10px;
+}
+
+.view-node-gallery-gallery-item-views td {
+	padding: 5px;
+}
+
+.view-node-gallery-gallery-item-views a {
+	text-decoration: none;
+}
+
+.view-node-gallery-gallery-item-views img {
+	border: 1px solid #867562;	
 }

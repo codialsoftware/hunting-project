@@ -67,10 +67,11 @@
 
   <header>
     <p class="submitted">
+      <?php //print $picture; ?>
+      <?php //print $submitted; ?>
+      <?php //print $permalink; ?>
 	
-	<?php 
-		print 'Dodany przez '.$author.' <i>(dnia: '.format_date($node->created, 'custom', 'd.m.Y').')</i>';
-	?>
+	<?php print 'Dodany przez '.theme('username', $comment).' TODO: Sformatowac date.'; ?>
     </p>
 
     <?php print render($title_prefix); ?>
