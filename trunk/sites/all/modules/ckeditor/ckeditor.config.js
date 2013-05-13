@@ -24,7 +24,9 @@ CKEDITOR.editorConfig = function(config) {
   // (as does Drupal), so just leave this line as is.
   config.protectedSource.push(/<\?[\s\S]*?\?>/g); // PHP Code
   config.protectedSource.push(/<code>[\s\S]*?<\/code>/gi); // Code tags
-  config.extraPlugins = '';
+//  config.extraPlugins = '';
+  config.extraPlugins += (config.extraPlugins ? ',imce' : 'imce' );
+  CKEDITOR.plugins.addExternal('imce', Drupal.settings.ckeditor.module_path + '/plugins/imce/');
 
   /*
     * Append here extra CSS rules that should be applied into the editing area.
@@ -64,7 +66,7 @@ CKEDITOR.editorConfig = function(config) {
  */
 
 //Toolbar definition for basic buttons
-Drupal.settings.cke_toolbar_DrupalBasic = [ [ 'Format', 'Bold', 'Italic', '-', 'NumberedList','BulletedList', '-', 'Link', 'Unlink', 'Image' ] ];
+Drupal.settings.cke_toolbar_DrupalBasic = [ [ 'Format', 'Bold', 'Italic', '-', 'NumberedList','BulletedList', '-', 'Link', 'Unlink', 'Image', 'IMCE' ] ];
 
 //Toolbar definition for Advanced buttons
 Drupal.settings.cke_toolbar_DrupalAdvanced = [
