@@ -190,6 +190,35 @@
   			$("#main form#user-login-form ul li.first a").html("Utwórz nowe konto");
   			$("#main form#user-login-form ul li.last a").html("Zmień hasło");
   			
+  			var $links = $("ul.links li.comment_forbidden a");
+  			$($links[0]).html("Zaloguj się");
+  			$($links[1]).html("załóż konto");
+  			
+  			var $linksSpan = $("ul.links li.comment_forbidden span");
+  			if ($linksSpan.lenght > 0) {
+	  			var htmlCopy = $linksSpan.html();
+	  			htmlCopy = htmlCopy.replace(" or ", " lub ").replace("to post comments", "by móc dodawać komentarze");
+	  			$linksSpan.html(htmlCopy);
+  			}
+  			
+  			var $readMore = $("#content ul.links li.node-readmore a");
+  			if ($readMore.length > 0) {
+  				$readMore.each(function() {
+					var readMoreHtml = $(this).html();
+	  				readMoreHtml = readMoreHtml.replace("Read more", "Więcej...");	
+		  			$(this).html(readMoreHtml);
+  				});
+  			}
+  			
+  			var $totalVotes = $("#content div.poll div.total");
+  			$totalVotes.each(function() {
+  				var tVHtml = $(this).html();
+  				tVHtml = tVHtml.replace("Total votes", "Głosów");
+  				$(this).html(tVHtml);
+  			});
+  			
+  			$("input[value='Cancel your vote']").attr('value', 'Anuluj swój głos');
+  			
   			// SIZES
   			
   			$(".sidebars").height($("#content").height() - 230);
