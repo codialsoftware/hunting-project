@@ -520,7 +520,7 @@ span.form-required {
 
 #edit-submit {
 	position: absolute;
-	right: 0px;
+	right: 10px;
 /* 	font-size: 15px;
 	font-family: "Times New Roman", Times, serif;
 	color: #ffe69b;
@@ -694,4 +694,13 @@ textarea {
 
 .view-node-gallery-gallery-item-views img {
 	border: 1px solid #867562;	
+}
+
+form#user-login {
+	margin: 10px;	
+}
+
+.submitted-by {
+	clear: both;
+	display: block;
 }
