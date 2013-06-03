@@ -83,6 +83,22 @@
  * @see template_process()
  */
 ?>
+
+<?php 
+    $renderContent = TRUE;
+    $fieldname = 'field_fulltext_user_search';
+    if (property_exists($node, $fieldname) && array_key_exists($node->language, $node->{$fieldname})) {
+        $fieldValue = $node->{$fieldname}[$node->language][0]['value'];
+        if (isset($fieldValue) && $fieldValue) {
+            // check if content contains current user's name
+            $safeBody = $body[0]['safe_value'];
+            $theUser = $user->name;
+            $renderContent = strpos($safeBody, $theUser)!==false;
+        }
+    }
+
+    if ($renderContent):
+?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
@@ -118,3 +134,5 @@
   <?php print render($content['comments']); ?>
 
 </article><!-- /.node -->
+
+<?php endif; ?>
