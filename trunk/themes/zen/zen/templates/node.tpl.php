@@ -91,9 +91,14 @@
         $fieldValue = $node->{$fieldname}[$node->language][0]['value'];
         if (isset($fieldValue) && $fieldValue) {
             // check if content contains current user's name
-            $safeBody = $body[0]['safe_value'];
-            $theUser = $user->name;
-            $renderContent = strpos($safeBody, $theUser)!==false;
+			if (isset($user) && isset($user->name)) {
+				$safeBody = $body[0]['safe_value'];
+				$theUser = $user->name;
+				$renderContent = strpos($safeBody, $theUser)!==false;
+			}
+			else {
+				$renderContent = FALSE;
+			}
         }
     }
 
